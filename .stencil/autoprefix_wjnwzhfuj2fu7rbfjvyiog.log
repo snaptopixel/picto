@@ -1,0 +1,14 @@
+/**  stylus error: /Users/casey/Misc/stencil-mill/src/styles/global.styl:17:47
+   13|   --sm-font-weight-base 500
+   14|   --sm-font-weight-bold 700
+   15| 
+   16|   --sm-color-base $base-color
+   17|   --sm-color-base-light alpha($base-color, 0.5)
+-----------------------------------------------------^
+   18|   --sm-color-link $link-color
+   19|   --sm-color-red #D2323C
+   20|   --sm-color-gray alpha($gray-color, 0.8)
+
+Cannot read property 'r' of undefined
+    at ":root" (/Users/casey/Misc/stencil-mill/src/styles/global.styl:2:74)
+  **/

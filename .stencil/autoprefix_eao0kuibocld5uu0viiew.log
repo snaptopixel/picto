@@ -1,0 +1,9 @@
+label {
+  display: block;
+}
+label + label {
+  margin-top: calc(var(--sm-margin-amount) * 1);
+}
+label:last-of-type {
+  margin-bottom: calc(var(--sm-margin-amount) * 3);
+}

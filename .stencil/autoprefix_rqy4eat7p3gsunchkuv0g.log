@@ -1,0 +1,10 @@
+@import 'stencil-mill.styl'
+label {
+  display: block;
+}
+label + label {
+  mt: 1;
+}
+label:last-of-type {
+  mb: 3;
+}

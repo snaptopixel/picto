@@ -1,0 +1,12 @@
+fs(amount)
+  font-size 'calc(var(--picto-font-size) * %s)' % amount
+
+vr(amount)
+  'calc(var(--picto-line-height) * %s)' % amount
+
+lh(amount)
+  line-height vr(amount)
+
+@import 'mixins/margin'
+@import 'mixins/padding'
+@import 'mixins/component'

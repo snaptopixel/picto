@@ -1,0 +1,84 @@
+:host {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: var(--picto-font-family) var(--picto-font-size);
+  color: var(--picto-color-base);
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+:host *,
+:host *::before,
+:host *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+:host h1 {
+  font-size: 61px;
+  line-height: 75px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+:host h2 {
+  font-size: 41px;
+  line-height: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+:host h3 {
+  font-size: 27px;
+  line-height: 50px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+:host h4 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+:host h5 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+:host p,
+:host ul,
+:host ol,
+:host pre,
+:host table,
+:host blockquote {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+:host ul ul,
+:host ol ol,
+:host ul ol,
+:host ol ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+:host hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+.pane-left {
+  padding: calc(var(--sm-padding-amount) * 3.5);
+  width: 300px;
+  height: 100vh;
+  background: rgba(0,0,0,0.05);
+}
+.pane-right {
+  padding: calc(var(--sm-padding-amount) * 5);
+  height: 100vh;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: scroll;
+}

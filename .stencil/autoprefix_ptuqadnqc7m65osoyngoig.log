@@ -1,0 +1,11 @@
+/**  stylus error: /Users/casey/Misc/stencil-mill/src/components/stencil-mill-preview/stencil-mill-preview.styl:2:18
+   1| :host
+   2|   component(block)
+-----------------------^
+   3| 
+   4| h1
+   5|   font var(--sm-font-weight-bold) var(--sm-font-bigger)
+
+TypeError: expected rgba or hsla, but got ident:block
+    at ":host" (/Users/casey/Misc/stencil-mill/src/components/stencil-mill-preview/stencil-mill-preview.styl:20:27)
+  **/

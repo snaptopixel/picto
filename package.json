@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "name": "@snaptopixel/picto-graph",
+  "author": "Casey Corcoran <https://github.com/snaptopixel>",
+  "version": "0.0.1",
+  "description": "Preview, develop and document StencilJS components",
+  "main": "dist/index.js",
+  "types": "dist/types/components.d.ts",
+  "module": "dist/esm/index.js",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build --config stencil.build.ts --prerender",
+    "prestart": "yarn install",
+    "start": "stencil build --config stencil.dev.ts --dev --watch --serve --docs-json www/components.json"
+  },
+  "devDependencies": {
+    "@stencil/core": "^0.13.2",
+    "@stencil/stylus": "^0.1.0",
+    "front-matter": "^2.3.0",
+    "marked-ts": "^1.0.0-beta.4",
+    "rollup-plugin-alias": "^1.4.0",
+    "rollup-plugin-commonjs": "^9.1.8",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-svgo": "^1.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-standard": "^8.0.1"
+  },
+  "dependencies": {
+    "@types/lodash-es": "^4.17.1",
+    "lodash-es": "^4.17.11"
+  }
+}

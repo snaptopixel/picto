@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'proxima-nova';
+  font-weight: 100;
+  src: url("../assets/fonts/proxima_nova_thin.woff") format('woff');
+}
+@font-face {
+  font-family: 'proxima-nova';
+  font-weight: 300;
+  src: url("../assets/fonts/proxima_nova_light.woff") format('woff');
+}
+@font-face {
+  font-family: 'proxima-nova';
+  font-weight: 400;
+  src: url("../assets/fonts/proxima_nova_regular.woff") format('woff');
+}
+@font-face {
+  font-family: 'proxima-nova';
+  font-weight: 600;
+  src: url("../assets/fonts/proxima_nova_semibold.woff") format('woff');
+}
+@font-face {
+  font-family: 'proxima-nova';
+  font-weight: 700;
+  src: url("../assets/fonts/proxima_nova_bold.woff") format('woff');
+}
+:root {
+  --sm-font-base: 14px/17px proxima-nova, Helvetica, Arial, sans-serif;
+  --sm-font-small: 13px/16px proxima-nova, Helvetica, Arial, sans-serif;
+  --sm-font-smaller: 12px/14px proxima-nova, Helvetica, Arial, sans-serif;
+  --sm-font-smallest: 11px/13px proxima-nova, Helvetica, Arial, sans-serif;
+  --sm-font-big: 16px/19px proxima-nova, Helvetica, Arial, sans-serif;
+  --sm-font-bigger: 28px/34px proxima-nova, Helvetica, Arial, sans-serif;
+  --sm-font-biggest: 36px/43px proxima-nova, Helvetica, Arial, sans-serif;
+  --sm-font-weight-base: 400;
+  --sm-font-weight-light: 300;
+  --sm-font-weight-bold: 600;
+  --sm-font-weight-black: 700;
+  --sm-color-base: #28323c;
+  --sm-color-base-light: rgba(40,50,60,0.5);
+  --sm-color-link: #0a8cc6;
+  --sm-color-red: #d2323c;
+  --sm-color-gray: rgba(40,50,60,0.8);
+  --sm-color-subtle: rgba(40,50,60,0.6);
+  --sm-margin-amount: 10px;
+  --sm-padding-amount: 10px;
+  --sm-focus-rect: 0 0 0 2px #6fcef8;
+  --sm-button-radius: 4px;
+  --sm-button-color: rgba(40,50,60,0.8);
+  --sm-button-color-primary: #fff;
+  --sm-button-bg: #fff;
+  --sm-button-bg-primary: linear-gradient(#19b0f3, #0a8cc6);
+  --sm-button-bg-primary-active: #0a8cc6;
+  --sm-button-shadow: 0 1px 0 0 rgba(0,0,0,0.05);
+}

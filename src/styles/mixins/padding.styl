@@ -1,0 +1,27 @@
+p(amount, sides)
+  for side in sides
+    if unit(amount)
+      padding-{side} amount
+    else
+      padding-{side} vr(amount)
+
+pa(value)
+  padding vr(value)
+
+pl(value)
+  p(value, left)
+
+pr(value)
+  p(value, right)
+
+pt(value)
+  p(value, top)
+
+pb(value)
+  p(value, bottom)
+
+pv(value)
+  p(value, top bottom)
+
+ph(value)
+  p(value, left right)

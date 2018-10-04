@@ -1,0 +1,47 @@
+* {
+  margin-top: 0;
+  margin-bottom: vr(2);
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+h1 {
+  font-size: calc(var(--picto-font-size) * 3.5);
+  line-height: vr(4);
+  margin-top: 0;
+  margin-bottom: vr(2);
+}
+h2 {
+  font-weight: bold;
+  font-size: calc(var(--picto-font-size) * 2.6);
+  line-height: vr(3);
+}
+h3 {
+  font-weight: bold;
+  font-size: calc(var(--picto-font-size) * 2.3);
+  line-height: vr(3);
+  margin-top: vr(-0.5);
+  margin-bottom: vr(1.5);
+}
+h4 {
+  font-weight: bold;
+  font-size: calc(var(--picto-font-size) * 1.7);
+  line-height: vr(2);
+  margin-top: vr(-0.5);
+  margin-bottom: vr(1.5);
+}
+p {
+  margin-top: vr(-0.5);
+  margin-bottom: vr(1.5);
+}
+:host {
+  display: block;
+  position: relative;
+  font-family: var(--picto-font-family);
+  font-size: calc(var(--picto-font-size) * 1);
+  line-height: vr(2);
+}

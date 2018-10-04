@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,700");
+:root {
+  --sm-font-base: 14px/17px 'Fira Sans', Helvetica, Arial, sans-serif;
+  --sm-font-small: 13px/16px 'Fira Sans', Helvetica, Arial, sans-serif;
+  --sm-font-smaller: 12px/14px 'Fira Sans', Helvetica, Arial, sans-serif;
+  --sm-font-smallest: 11px/13px 'Fira Sans', Helvetica, Arial, sans-serif;
+  --sm-font-big: 16px/19px 'Fira Sans', Helvetica, Arial, sans-serif;
+  --sm-font-bigger: 28px/34px 'Fira Sans', Helvetica, Arial, sans-serif;
+  --sm-font-biggest: 36px/43px 'Fira Sans', Helvetica, Arial, sans-serif;
+  --sm-font-weight-base: 300;
+  --sm-font-weight-bold: 700;
+  --sm-color-base: rgba(0,0,0,0.5);
+  --sm-margin-amount: 10px;
+  --sm-padding-amount: 10px;
+}

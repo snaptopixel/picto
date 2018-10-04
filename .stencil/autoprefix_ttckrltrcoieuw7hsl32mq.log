@@ -1,0 +1,77 @@
+:host {
+  display: block;
+  font: var(--sm-font-weight-base) var(--sm-font-base);
+  color: var(--sm-color-base);
+  position: relative;
+}
+:host p,
+:host ol,
+:host ul,
+:host li,
+:host dl,
+:host dt,
+:host dd,
+:host blockquote,
+:host figure,
+:host fieldset,
+:host legend,
+:host textarea,
+:host pre,
+:host iframe,
+:host hr,
+:host h1,
+:host h2,
+:host h3,
+:host h4,
+:host h5,
+:host h6 {
+  margin: 0;
+  padding: 0;
+}
+:host h1,
+:host h2,
+:host h3,
+:host h4,
+:host h5,
+:host h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+:host ul {
+  list-style: none;
+}
+:host button,
+:host input,
+:host select,
+:host textarea {
+  outline: none;
+  margin: 0;
+}
+:host *,
+:host *::before,
+:host *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font: inherit;
+}
+:host *:focus {
+  -webkit-transition: -webkit-box-shadow 100ms ease-out;
+  transition: -webkit-box-shadow 100ms ease-out;
+  transition: box-shadow 100ms ease-out;
+  transition: box-shadow 100ms ease-out, -webkit-box-shadow 100ms ease-out;
+  -webkit-box-shadow: var(--sm-focus-rect);
+  box-shadow: var(--sm-focus-rect);
+}
+h1 {
+  font: var(--sm-font-weight-black) var(--sm-font-bigger);
+  margin-bottom: calc(var(--sm-margin-amount) * 3);
+}
+label {
+  display: block;
+}
+label + label {
+  margin-top: calc(var(--sm-margin-amount) * 1);
+}
+label:last-of-type {
+  margin-bottom: calc(var(--sm-margin-amount) * 3);
+}

@@ -1,0 +1,27 @@
+m(amount, sides)
+  for side in sides
+    if unit(amount)
+      margin-{side} amount
+    else
+      margin-{side} vr(amount)
+
+ma(value)
+  margin vr(value)
+
+ml(value)
+  m(value, left)
+
+mr(value)
+  m(value, right)
+
+mt(value)
+  m(value, top)
+
+mb(value)
+  m(value, bottom)
+
+mv(value)
+  m(value, top bottom)
+
+mh(value)
+  m(value, left right)

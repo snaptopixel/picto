@@ -1,0 +1,92 @@
+{
+  "components": [
+    {
+      "tag": "picto-gram",
+      "readme": "# u-story\n\n\n",
+      "usage": {},
+      "props": [
+        {
+          "name": "component",
+          "type": "any",
+          "attr": "component",
+          "docs": ""
+        },
+        {
+          "name": "usage",
+          "type": "any",
+          "attr": "usage",
+          "docs": ""
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "styles": []
+    },
+    {
+      "tag": "picto-graph",
+      "readme": "# u-story\n\n\n",
+      "usage": {},
+      "props": [
+        {
+          "name": "guidesUrl",
+          "type": "string",
+          "attr": "guides-url",
+          "docs": ""
+        },
+        {
+          "name": "manifestUrl",
+          "type": "string",
+          "attr": "manifest-url",
+          "docs": ""
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "styles": []
+    },
+    {
+      "tag": "picto-md",
+      "readme": "# picto-md\n\n\n",
+      "usage": {
+        "default": "---\ntitle: Rendering Markdown\nprops:\n  source: |\n    # Heading 1\n    ## Heading 2\n    ### Heading 3\n    #### Heading 4ya\n    ##### Heading 5\n    **Lorem Ipsum** _is simply_ dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\n    -Lorem Ipsum- _is simply_ dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n---\n\n# Rendering Markdown\nMarkdown is rendered in various places via the `picto-md` component. You can see an example below\n\n## Customizing styles\nThere are a variety of customizations you can make via the following css variables:\n\nVariable | Default Value\n--- | ---\n--picto-font-family | 'Zilla Slab', serif\n--picto-font-size | 16px\n--picto-line-height | 14px"
+      },
+      "props": [
+        {
+          "name": "source",
+          "type": "string",
+          "attr": "source",
+          "docs": ""
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "styles": []
+    },
+    {
+      "tag": "picto-nav",
+      "readme": "# picto-nav\n\n\n",
+      "usage": {
+        "usage": "---\ntitle: Examples\nprops:\n  components:\n    - tag: component-multi-examples\n      usage:\n        one: \"\n          ---\n          title: Example One\n          ---\n        \"\n        two: \"\n          ---\n          title: Example Two\n          ---\n        \"\n        three: \"\n          ---\n          title: Example One\n          ---\n        \"\n    - tag: component-single-example\n      usage:\n        one: \"\n          ---\n          title: Example One\n          ---\n        \"\n---\n\n# Navigation menu\nDisplays links for all of the components listed in components.json that have usage examples.\n\n### Creating usage examples\nAdd a directory in your component's folder named \"usage\" and add any number of .md files"
+      },
+      "props": [
+        {
+          "name": "components",
+          "type": "IComponent[]",
+          "attr": "components",
+          "docs": ""
+        }
+      ],
+      "methods": [],
+      "events": [
+        {
+          "event": "componentSelected",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": ""
+        }
+      ],
+      "styles": []
+    }
+  ]
+}

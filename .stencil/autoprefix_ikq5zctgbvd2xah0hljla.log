@@ -1,0 +1,106 @@
+:host {
+  display: block;
+  position: relative;
+  font-family: var(--picto-font-family);
+  font-size: calc(var(--picto-font-size) * 1);
+  line-height: calc(var(--picto-line-height) * 2);
+}
+:host :host-context(.grid-visible) {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, transparent), to(rgba(255,0,0,0.4)));
+  background: linear-gradient(transparent 90%, rgba(255,0,0,0.4));
+  background-size: 100% calc(var(--picto-line-height) * 1);
+  background-attachment: fixed;
+}
+:host * {
+  margin: 0;
+  padding: 0;
+  line-height: calc(var(--picto-line-height) * 1);
+  margin-bottom: calc(var(--picto-line-height) * 1);
+}
+.grid-visible :host * {
+  background: rgba(128,0,128,0.1);
+}
+:host *,
+:host *::before,
+:host *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+}
+:host ul {
+  list-style: none;
+}
+:host input,
+:host textarea {
+  display: block;
+}
+:host input[type="checkbox"],
+:host input[type="radio"] {
+  display: inline-block;
+  margin-bottom: 0;
+}
+:host h1 {
+  font-size: calc(var(--picto-font-size) * 2.4);
+  line-height: calc(var(--picto-line-height) * 3);
+  margin-top: calc(var(--picto-line-height) * -0.5);
+  margin-bottom: calc(var(--picto-line-height) * 1.5);
+}
+:host h2 {
+  font-weight: bold;
+  font-size: calc(var(--picto-font-size) * 2);
+  line-height: calc(var(--picto-line-height) * 3);
+  margin-top: calc(var(--picto-line-height) * -0.5);
+  margin-bottom: calc(var(--picto-line-height) * 1.5);
+}
+:host h3 {
+  font-weight: bold;
+  font-size: calc(var(--picto-font-size) * 1.6);
+  line-height: calc(var(--picto-line-height) * 2);
+  margin-top: calc(var(--picto-line-height) * -0.5);
+  margin-bottom: calc(var(--picto-line-height) * 1.5);
+}
+:host h4 {
+  font-weight: bold;
+  font-size: calc(var(--picto-font-size) * 1.2);
+  line-height: calc(var(--picto-line-height) * 2);
+  margin-top: calc(var(--picto-line-height) * -0.5);
+  margin-bottom: calc(var(--picto-line-height) * 1.5);
+}
+:host h5 {
+  font-weight: bold;
+  font-size: calc(var(--picto-font-size) * 1);
+  line-height: calc(var(--picto-line-height) * 2);
+  margin-top: calc(var(--picto-line-height) * -0.5);
+  margin-bottom: calc(var(--picto-line-height) * 1.5);
+}
+:host p {
+  margin-top: calc(var(--picto-line-height) * -0.5);
+  margin-bottom: calc(var(--picto-line-height) * 1.5);
+  line-height: calc(var(--picto-line-height) * 2);
+}
+:host label {
+  line-height: calc(var(--picto-line-height) * 2);
+  display: block;
+  font-weight: bold;
+  font-size: calc(var(--picto-font-size) * 1.2);
+}
+:host input,
+:host textarea {
+  font-size: calc(var(--picto-font-size) * 0.8);
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 1px inset rgba(0,0,0,0.2);
+  box-shadow: 0 0 0 1px inset rgba(0,0,0,0.2);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), transparent 10px);
+}
+:host input {
+  height: calc(var(--picto-line-height) * 2);
+}
+:host textarea {
+  resize: vertical;
+  line-height: calc(var(--picto-line-height) * 1);
+  height: calc(var(--picto-line-height) * 10);
+}

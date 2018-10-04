@@ -1,0 +1,82 @@
+:host {
+  font-family: var(--sm-font-family);
+  font-size: 18px;
+  line-height: 25px;
+}
+h1 {
+  font-size: 61px;
+  line-height: 75px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+h2 {
+  font-size: 41px;
+  line-height: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+h3 {
+  font-size: 27px;
+  line-height: 50px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+h4 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+h5 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* Let's make sure all's aligned */
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+a,
+b,
+i,
+strong,
+em,
+small,
+code {
+  line-height: 0;
+}
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+
+dd {
+  white-space: pre;
+}
