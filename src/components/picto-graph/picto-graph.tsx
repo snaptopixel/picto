@@ -10,7 +10,7 @@ import { getComponents } from '@/client'
   shadow: true
 })
 export class Pictograph {
-  @Prop() manifestUrl = 'components.json'
+  @Prop() manifestUrl = '/components.json'
   @Element() el: HTMLElement
   @State() currentProps: IComponentProps
 
@@ -28,12 +28,12 @@ export class Pictograph {
     return [
       <stencil-router>
         <menu>
-          <h4>Components <ion-icon name='ios-repeat' onClick={() => this.componentWillLoad()}/></h4>
+          <h4>{document.title} <ion-icon name='ios-repeat' onClick={() => this.componentWillLoad()}/></h4>
           <picto-nav components={ this.components }/>
         </menu>
         <main>
             <stencil-route url='/' exact={true} routeRender={() =>
-              <picto-md source={this.el.textContent.replace(/^\s*/gm, '')}/>
+              <picto-md class='index' source={this.el.textContent.replace(/^\s*/gm, '')}/>
             }/>
             {
               this.components.map(c =>

@@ -4,10 +4,14 @@ import svg from 'rollup-plugin-svgo'
 import alias from 'rollup-plugin-alias'
 
 export const config: Config = {
-  namespace: 'u-components',
+  namespace: 'picto',
   globalStyle: 'src/styles/global.styl',
   outputTargets: [{
     type: 'dist'
+  }],
+  copy: [{
+    src: 'themes',
+    dest: '../themes'
   }],
   plugins: [
     alias({
@@ -15,8 +19,11 @@ export const config: Config = {
     }),
     svg(),
     stylus({
+      includePaths: [
+        'src/styles'
+      ],
       injectGlobalPaths: [
-        'src/styles/helpers.styl'
+        'helpers.styl'
       ]
     })
   ]

@@ -1,8 +1,8 @@
 {
-  "private": true,
+  "license" : "MIT",
   "name": "@snaptopixel/picto",
   "author": "Casey Corcoran <https://github.com/snaptopixel>",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Preview, develop and document StencilJS components",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
@@ -12,7 +12,8 @@
     "dist/"
   ],
   "scripts": {
-    "build": "stencil build --config stencil.build.ts --prerender",
+    "prepublishOnly": "npm run build",
+    "build": "stencil build --config stencil.build.ts",
     "prestart": "yarn install",
     "start": "stencil build --config stencil.dev.ts --dev --watch --serve --docs-json www/components.json"
   },
