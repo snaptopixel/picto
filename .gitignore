@@ -19,6 +19,7 @@ log.txt
 .versions/
 node_modules/
 $RECYCLE.BIN/
+yarn-error.log
 
 .DS_Store
 Thumbs.db
