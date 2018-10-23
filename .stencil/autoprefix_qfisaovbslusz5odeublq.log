@@ -1,6 +1,0 @@
-@import url("https://fonts.googleapis.com/css?family=Zilla+Slab:500,700");
-:root {
-  --picto-font-family: 'Zilla Slab', serif;
-  --picto-font-size: 12px;
-  --picto-line-height: 16px;
-}

@@ -7,6 +7,11 @@ vr(amount)
 lh(amount)
   line-height vr(amount)
 
-@import 'mixins/margin'
-@import 'mixins/padding'
-@import 'mixins/component'
+@import 'mixins/*'
+
+component($display = inline-block)
+  display $display
+  position relative
+  font-family var(--picto-font-family)
+  fs 1
+  lh 2

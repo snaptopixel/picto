@@ -2,30 +2,27 @@
 title: Examples
 props:
   components:
-    - tag: component-multi-examples
+    - tag: item-no-usage
+    - tag: item-usage-one
       usage:
-        one: "
+        one: |
           ---
           title: Example One
           ---
-        "
-        two: "
+        two: |
           ---
           title: Example Two
           ---
-        "
-        three: "
+        three: |
           ---
           title: Example One
           ---
-        "
-    - tag: component-single-example
+    - tag: item-usage-two
       usage:
-        one: "
+        one: |
           ---
           title: Example One
           ---
-        "
 ---
 
 # Navigation menu

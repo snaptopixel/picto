@@ -1,0 +1,24 @@
+:root {
+  --picto-font-family: Avenir, 'Helvetica Neue', Helvetica, sans-serif;
+  --picto-font-size: 14px;
+  --picto-line-height: 12px;
+  --picto-text-color: rgba(0, 0, 0, 0.6);
+  --picto-pane-background: rgba(0, 0, 0, 0.02);
+  --picto-pane-border: rgba(0, 0, 0, 0.1);
+  --picto-accent-color: #16acda;
+  --picto-accent-color-alt: white;
+  --picto-bg-light: repeating-linear-gradient(
+    135deg,
+    white,
+    white 10px,
+    rgba(0, 0, 0, 0.03) 12px,
+    rgba(0, 0, 0, 0.03) 24px
+  );
+  --picto-bg-dark: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8) 10px,
+    rgba(0, 0, 0, 0.83) 12px,
+    rgba(0, 0, 0, 0.83) 24px
+  );
+}

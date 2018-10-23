@@ -1,0 +1,50 @@
+:host
+  component(block)
+  height 100%
+  background var(--picto-pane-background)
+  border-left 1px solid var(--picto-pane-border)
+  flex-direction column
+  main
+    pa 2
+
+  label
+    line-height vr(2)
+    display block
+    font-weight bold
+    fs 1.2
+    code
+      font-family 'Courier New', Courier, monospace
+      font-weight normal
+      display inline-block
+      fs 0.8
+      vertical-align middle
+      margin 0
+      ph 0.2
+      background alpha(black, 0.1)
+      border-radius 3px
+
+  input[type="text"], textarea
+    fs 0.8
+    font-family 'Courier New', Courier, monospace
+    width 100%
+    border none
+    box-shadow 0 0 0 1px alpha(black, 0.2) inset, 0 3px 0 alpha(black, 0.1) inset
+    background white
+
+  input[type="text"]
+    height vr(2)
+
+  textarea
+    resize vertical
+    lh 1
+    height vr(10)
+
+  section h5
+    mh -6
+    mb 3
+    pl 6
+    border 1px solid var(--picto-pane-border)
+    border-left none
+    border-right none
+    background var(--picto-pane-background)
+    lh 3

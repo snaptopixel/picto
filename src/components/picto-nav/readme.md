@@ -12,13 +12,6 @@
 | `components` | --        |             | `IComponent[]` |
 
 
-## Events
-
-| Event               | Description |
-| ------------------- | ----------- |
-| `componentSelected` |             |
-
-
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*

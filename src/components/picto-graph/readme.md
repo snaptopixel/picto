@@ -9,7 +9,6 @@
 
 | Property      | Attribute      | Description | Type     |
 | ------------- | -------------- | ----------- | -------- |
-| `guidesUrl`   | `guides-url`   |             | `string` |
 | `manifestUrl` | `manifest-url` |             | `string` |
 
 

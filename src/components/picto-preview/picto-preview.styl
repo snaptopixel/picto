@@ -1,0 +1,35 @@
+:host
+  component(block)
+
+section
+  display flex
+  justify-content center
+  background var(--picto-bg-light)
+  mh -6
+  ph 6
+  pv 4
+  mb 0
+  box-shadow 0 -1px 0 alpha(black, 0.1) inset, 0 -3px 0 alpha(black, 0.05) inset
+  &.dark
+    background var(--picto-bg-dark)
+  :first-child
+    mb 0
+
+.switcher
+  position absolute
+  top 0
+  right vr(-5)
+  ma 1
+  background white
+  button
+    pa 0.5
+    ma 0
+    font-family inherit
+    font-size inherit
+    border 1px solid rgba(128, 128, 128, 0.5)
+    background var(--picto-pane-background)
+    &:not(:first-child)
+      border-left none
+    &.selected
+      background var(--picto-accent-color)
+      color var(--picto-accent-color-alt)

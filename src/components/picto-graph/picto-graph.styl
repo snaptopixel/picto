@@ -1,19 +1,46 @@
 :host
-  component(flex)
   position fixed
   top 0
   left 0
   right 0
   bottom 0
 
-  > menu
-    padding vr(3) vr(2)
-    height 100vh
-    background alpha(black, 5%)
-    min-width 260px
+stencil-router
+  component(flex)
 
-  > main
-    padding vr(3) vr(6)
-    height 100vh
-    flex-grow 1
-    overflow scroll
+h4 > ion-icon
+  color var(--picto-accent-color)
+  cursor pointer
+  font-size 24px
+  float right
+
+menu
+  ph 1.5
+  pv 2
+  height 100vh
+  background var(--picto-pane-background)
+  border-right 1px solid var(--picto-pane-border)
+  min-width 280px
+  > ion-icon
+    color var(--picto-accent-color)
+    float left
+    mr 0.5
+    vertical-align text-bottom
+
+main
+  ph 5
+  height 100vh
+  flex-grow 1
+  overflow scroll
+  picto-preview
+    mb 4
+
+aside
+  width 320px
+  flex-shrink 0
+  //margin-right -320px
+  will-change margin-right
+  transition margin-right 200ms ease-in-out
+  &.open
+    margin-right 0
+

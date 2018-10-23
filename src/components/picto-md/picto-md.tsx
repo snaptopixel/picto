@@ -1,15 +1,21 @@
 import { Component, Prop, Element } from '@stencil/core'
-import * as M from 'marked-ts'
-const { Marked } = (M as any).default
+
+import mts from 'marked-ts'
+import hljs from 'highlight.js'
+
+mts.Marked.setOptions({ highlight: (code, lang) => hljs.highlight(lang, code).value, langPrefix: 'hljs lang-' })
+
 @Component({
   tag: 'picto-md',
-  styleUrl: 'picto-md.styl',
+  styleUrls: ['picto-md.styl', 'nord.css'],
   shadow: true
 })
 export class Markdown {
   @Prop() source: string
   @Element() el: HTMLElement
   render () {
-    return <div innerHTML={Marked.parse(this.source)}/>
+    return [
+      <div innerHTML={mts.Marked.parse(this.source)}/>
+    ]
   }
 }

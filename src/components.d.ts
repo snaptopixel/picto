@@ -7,30 +7,21 @@
 
 import '@stencil/core';
 
-
+import '@stencil/router';
+import '@stencil/state-tunnel';
 import {
   IComponent,
+  IComponentProps,
   IUsage,
 } from '@/model';
 
 
 export namespace Components {
 
-  interface PictoGram {
-    'component': IComponent;
-    'usage': IUsage;
-  }
-  interface PictoGramAttributes extends StencilHTMLAttributes {
-    'component'?: IComponent;
-    'usage'?: IUsage;
-  }
-
   interface PictoGraph {
-    'guidesUrl': string;
     'manifestUrl': string;
   }
   interface PictoGraphAttributes extends StencilHTMLAttributes {
-    'guidesUrl'?: string;
     'manifestUrl'?: string;
   }
 
@@ -46,31 +37,47 @@ export namespace Components {
   }
   interface PictoNavAttributes extends StencilHTMLAttributes {
     'components'?: IComponent[];
-    'onComponentSelected'?: (event: CustomEvent) => void;
+  }
+
+  interface PictoPreview {
+    'component': IComponent;
+    'componentProps': IComponentProps;
+    'usage': IUsage;
+  }
+  interface PictoPreviewAttributes extends StencilHTMLAttributes {
+    'component'?: IComponent;
+    'componentProps'?: IComponentProps;
+    'usage'?: IUsage;
+  }
+
+  interface PictoProps {
+    'component': IComponent;
+    'usage': IUsage;
+  }
+  interface PictoPropsAttributes extends StencilHTMLAttributes {
+    'component'?: IComponent;
+    'onPropsChanged'?: (event: CustomEvent) => void;
+    'usage'?: IUsage;
   }
 }
 
 declare global {
   interface StencilElementInterfaces {
-    'PictoGram': Components.PictoGram;
     'PictoGraph': Components.PictoGraph;
     'PictoMd': Components.PictoMd;
     'PictoNav': Components.PictoNav;
+    'PictoPreview': Components.PictoPreview;
+    'PictoProps': Components.PictoProps;
   }
 
   interface StencilIntrinsicElements {
-    'picto-gram': Components.PictoGramAttributes;
     'picto-graph': Components.PictoGraphAttributes;
     'picto-md': Components.PictoMdAttributes;
     'picto-nav': Components.PictoNavAttributes;
+    'picto-preview': Components.PictoPreviewAttributes;
+    'picto-props': Components.PictoPropsAttributes;
   }
 
-
-  interface HTMLPictoGramElement extends Components.PictoGram, HTMLStencilElement {}
-  var HTMLPictoGramElement: {
-    prototype: HTMLPictoGramElement;
-    new (): HTMLPictoGramElement;
-  };
 
   interface HTMLPictoGraphElement extends Components.PictoGraph, HTMLStencilElement {}
   var HTMLPictoGraphElement: {
@@ -90,18 +97,32 @@ declare global {
     new (): HTMLPictoNavElement;
   };
 
+  interface HTMLPictoPreviewElement extends Components.PictoPreview, HTMLStencilElement {}
+  var HTMLPictoPreviewElement: {
+    prototype: HTMLPictoPreviewElement;
+    new (): HTMLPictoPreviewElement;
+  };
+
+  interface HTMLPictoPropsElement extends Components.PictoProps, HTMLStencilElement {}
+  var HTMLPictoPropsElement: {
+    prototype: HTMLPictoPropsElement;
+    new (): HTMLPictoPropsElement;
+  };
+
   interface HTMLElementTagNameMap {
-    'picto-gram': HTMLPictoGramElement
     'picto-graph': HTMLPictoGraphElement
     'picto-md': HTMLPictoMdElement
     'picto-nav': HTMLPictoNavElement
+    'picto-preview': HTMLPictoPreviewElement
+    'picto-props': HTMLPictoPropsElement
   }
 
   interface ElementTagNameMap {
-    'picto-gram': HTMLPictoGramElement;
     'picto-graph': HTMLPictoGraphElement;
     'picto-md': HTMLPictoMdElement;
     'picto-nav': HTMLPictoNavElement;
+    'picto-preview': HTMLPictoPreviewElement;
+    'picto-props': HTMLPictoPropsElement;
   }
 
 

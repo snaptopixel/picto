@@ -9,8 +9,8 @@ export interface IComponent {
   tag: string
   styles: any[]
   props: IComponentProp[]
-  readme: string
-  usage: {[filename: string]: string},
+  readme: IParsedMarkdown
+  usage: {[filename: string]: IParsedMarkdown}
   methods: any[]
   events: any[]
 }
@@ -27,14 +27,20 @@ export interface IGuideConfig {
   guides: IGuide[]
 }
 
-export interface IUsage {
-  title: string
-  props: {[prop: string]: any}
-  innerHTML: string
-}
-
 export interface IParsedMarkdown {
   attributes: IUsage
   body: string
   frontmatter: string
+}
+
+export interface IUsage {
+  title?: string
+  controls?: {[prop: string]: string}
+  props?: {[prop: string]: any}
+  background?: string
+  innerHTML?: string
+}
+
+export interface IComponentProps {
+  [prop: string]: any
 }
