@@ -10,7 +10,7 @@ import { getComponents } from '@/client'
   shadow: true
 })
 export class Pictograph {
-  @Prop() manifestUrl = '/components.json'
+  @Prop() manifestUrl = 'components.json'
   @Element() el: HTMLElement
   @State() currentProps: IComponentProps
 
