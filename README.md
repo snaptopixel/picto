@@ -23,6 +23,9 @@ Once you've got the basics up and running you can create preconfigured examples 
 <head>
   <meta charset=utf-8>
   <title>My Component Library</title>
+  <!-- Make sure you replace your-namespace with your namespace ;) -->
+  <script src=/build/your-namespace.js></script>
+  <link rel=stylesheet href=/build/your-namespace.css>
   <script src=https://unpkg.com/@snaptopixel/picto/dist/picto.js></script>
   <link rel=stylesheet href=https://unpkg.com/@snaptopixel/picto/dist/themes/default.css>
 </head>
@@ -74,6 +77,8 @@ Markdown here…
 ```
 
 #### All supported options
+- **props**  
+Optional hash containing prop name/value pairs that will be pre-populated
 - **background**  
 css `background` value for the component preview, `dark` or `light` is also supported for predefined values
 - **innerHTML**  
