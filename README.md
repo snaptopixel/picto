@@ -52,9 +52,8 @@ outputTargets: [{
 ### package.json
 Add the following to the `scripts` portion (you can name it whatever you'd like):
 
-> ⚠️&nbsp;&nbsp;Make sure you replace `[YOUR NAMESPACE]` with the `namespace` value from your stencil config!
 ```json
-"picto": "stencil build --config stencil.dev.ts --dev --watch --serve --docs-json docs/build/[YOUR NAMESPACE]/components.json"
+"picto": "stencil build --config stencil.dev.ts --dev --watch --serve --docs-json docs/components.json"
 ```
 
 ### Run it!
