@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/snaptopixel/picto/master/assets/logo.svg" width="150"/>
+  <img src="https://raw.githubusercontent.com/snaptopixel/picto/master/assets/logo.svg?sanitize=true" width="150"/>
 </p>
 
 ---
