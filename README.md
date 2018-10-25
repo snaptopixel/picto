@@ -60,6 +60,8 @@ Add the following to the `scripts` portion (you can name it whatever you'd like)
 ### Run it!
 Use your preferred package manager to run the newly added script `yarn picto` or `npm run picto`. Your browser will launch once compiled and you'll be able to preview and play with your components with hot-reloading etc.
 
+> ⚠️&nbsp;&nbsp;After running, you'll notice a new `docs` directory, you can add this to `.gitignore` or even deploy it to your repo and host on github for an auto-updating docs site.
+
 ### Documenting components
 After running for the first time you'll notice that `readme.md` files have been created next to your components (via Stencil). This is your entry point for documenting and configuring your example components.
 
