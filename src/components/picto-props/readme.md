@@ -7,17 +7,17 @@
 
 ## Properties
 
-| Property    | Attribute | Description | Type         |
-| ----------- | --------- | ----------- | ------------ |
-| `component` | --        |             | `IComponent` |
-| `usage`     | --        |             | `IUsage`     |
+| Property    | Attribute | Description | Type  |
+| ----------- | --------- | ----------- | ----- |
+| `component` | --        |             | `any` |
+| `usage`     | --        |             | `any` |
 
 
 ## Events
 
-| Event          | Description |
-| -------------- | ----------- |
-| `propsChanged` |             |
+| Event          | Detail | Description |
+| -------------- | ------ | ----------- |
+| `propsChanged` |        |             |
 
 
 ----------------------------------------------

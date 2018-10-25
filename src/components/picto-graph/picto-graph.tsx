@@ -10,14 +10,14 @@ import { getComponents } from '@/client'
   shadow: true
 })
 export class Pictograph {
-  @Prop() manifestUrl = 'components.json'
   @Element() el: HTMLElement
+  @Prop({ context: 'resourcesUrl' }) resourcesUrl: string
+  @Prop() manifestUrl: string
   @State() currentProps: IComponentProps
-
   @State() components: IComponent[] = []
 
   async componentWillLoad () {
-    this.components = await getComponents(this.manifestUrl)
+    this.components = await getComponents(this.manifestUrl || this.resourcesUrl + 'components.json')
   }
 
   onPropsChanged = ({ detail: props }: CustomEvent<IComponentProps>) => {

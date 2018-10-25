@@ -30,7 +30,7 @@ export interface IGuideConfig {
 export interface IParsedMarkdown {
   attributes: IUsage
   body: string
-  frontmatter: string
+  frontmatter?: string
 }
 
 export interface IUsage {

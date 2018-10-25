@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/logo.svg" width="150"/>
+  <img src="https://raw.githubusercontent.com/snaptopixel/picto/master/assets/logo.svg" width="150"/>
 </p>
 
 ---
@@ -40,12 +40,21 @@ Once you've got the basics up and running you can create preconfigured examples 
 ```
 
 ### stencil.dev.ts
-This should be a duplicate of your `stencil.config.ts` with the `www` output target instead of `dist`
+This should be a duplicate of your `stencil.config.ts` replacing your `dist` outputTarget with the following:
+
+```ts
+outputTargets: [{
+  type: 'www',
+  dir: 'docs'
+}],
+```
 
 ### package.json
 Add the following to the `scripts` portion (you can name it whatever you'd like):
+
+> ⚠️&nbsp;&nbsp;Make sure you replace `[YOUR NAMESPACE]` with the `namespace` value from your stencil config!
 ```json
-"picto": "stencil build --config stencil.dev.ts --dev --watch --serve --docs-json www/components.json"
+"picto": "stencil build --config stencil.dev.ts --dev --watch --serve --docs-json docs/build/[YOUR NAMESPACE]/components.json"
 ```
 
 ### Run it!

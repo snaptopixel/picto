@@ -7,7 +7,8 @@ export const config: Config = {
   namespace: 'picto',
   globalStyle: 'src/styles/global.styl',
   outputTargets: [{
-    type: 'www'
+    type: 'www',
+    dir: 'docs'
   }],
   copy: [{
     src: 'themes',

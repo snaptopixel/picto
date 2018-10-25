@@ -7,9 +7,18 @@
 
 ## Properties
 
-| Property     | Attribute | Description | Type           |
-| ------------ | --------- | ----------- | -------------- |
-| `components` | --        |             | `IComponent[]` |
+| Property     | Attribute | Description | Type    |
+| ------------ | --------- | ----------- | ------- |
+| `components` | --        |             | `any[]` |
+
+
+## CSS Custom Properties
+
+| Name                       | Description |
+| -------------------------- | ----------- |
+| `--picto-accent-color`     |             |
+| `--picto-accent-color-alt` |             |
+| `--picto-pane-border`      |             |
 
 
 ----------------------------------------------

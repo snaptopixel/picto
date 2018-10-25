@@ -18,11 +18,11 @@ I like to majke thingnkask
 
 ## Properties
 
-| Property         | Attribute | Description | Type              |
-| ---------------- | --------- | ----------- | ----------------- |
-| `componentProps` | --        |             | `IComponentProps` |
-| `component`      | --        |             | `IComponent`      |
-| `usage`          | --        |             | `IUsage`          |
+| Property         | Attribute | Description | Type  |
+| ---------------- | --------- | ----------- | ----- |
+| `componentProps` | --        |             | `any` |
+| `component`      | --        |             | `any` |
+| `usage`          | --        |             | `any` |
 
 
 ----------------------------------------------

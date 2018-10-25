@@ -1,5 +1,5 @@
 {
-  "license" : "MIT",
+  "license": "MIT",
   "name": "@snaptopixel/picto",
   "author": "Casey Corcoran <https://github.com/snaptopixel>",
   "version": "0.0.4",
@@ -15,12 +15,12 @@
     "prepublishOnly": "npm run build",
     "build": "stencil build --config stencil.build.ts",
     "prestart": "yarn install",
-    "start": "stencil build --config stencil.dev.ts --dev --watch --serve --docs-json www/components.json"
+    "start": "stencil build --config stencil.dev.ts --dev --watch --serve --docs-json docs/build/picto/components.json"
   },
   "devDependencies": {
-    "@stencil/core": "^0.14.2",
+    "@stencil/core": "0.15.0",
     "@stencil/stylus": "^0.1.0",
-    "front-matter": "^3.0.0",
+    "front-matter": "https://github.com/snaptopixel/front-matter",
     "marked-ts": "^1.0.0-beta.4",
     "rollup-plugin-alias": "^1.4.0",
     "rollup-plugin-svgo": "^1.0.1",
