@@ -2,16 +2,16 @@ import { Component, Prop, Watch, Element } from '@stencil/core'
 import { IComponent, IUsage } from '@/model'
 import { kebabCase } from 'lodash-es'
 
-function createSubmenu ({ usage, tag }: IComponent) {
+function createSubmenu (baseurl: string, { usage, tag }: IComponent) {
   const usageKeys = Object.keys(usage).filter(k => k !== 'index')
   if (usageKeys.length === 0) return
-  const baseUrl = `/${tag}`
+  const baseUrl = baseurl + tag
   return [
     <stencil-route url={baseUrl} routeRender={props =>
       <ul class='menu-secondary'>{
         usageKeys.map(n =>
           createSubmenuLink(
-            `${baseUrl}/${kebabCase(n)}`,
+            baseUrl + '/' + kebabCase(n),
             usage[n].attributes.title
           )
         )
@@ -36,6 +36,7 @@ function createSubmenuLink (url: string, label: string) {
 })
 export class Nav {
   @Prop() components: IComponent[] = []
+  @Prop() baseurl: string = '/'
   render () {
     return [
       <ul class='menu-primary'>{
@@ -43,8 +44,8 @@ export class Nav {
           const { usage, tag } = component
           return [
             <li class='link'>{[
-              <stencil-route-link url={`/${tag}`} class={{ hasSubmenu: Object.keys(usage).length > 1 }} activeClass='is-active'>{tag}</stencil-route-link>,
-              createSubmenu(component)
+              <stencil-route-link url={this.baseurl + tag} class={{ hasSubmenu: Object.keys(usage).length > 1 }} activeClass='is-active'>{tag}</stencil-route-link>,
+              createSubmenu(this.baseurl, component)
             ]}</li>
           ]
         })

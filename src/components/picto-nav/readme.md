@@ -7,9 +7,10 @@
 
 ## Properties
 
-| Property     | Attribute | Description | Type    |
-| ------------ | --------- | ----------- | ------- |
-| `components` | --        |             | `any[]` |
+| Property     | Attribute | Description | Type     |
+| ------------ | --------- | ----------- | -------- |
+| `baseurl`    | `baseurl` |             | `string` |
+| `components` | --        |             | `any[]`  |
 
 
 ## CSS Custom Properties

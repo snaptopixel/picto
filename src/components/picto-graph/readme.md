@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property      | Attribute      | Description | Type     |
-| ------------- | -------------- | ----------- | -------- |
-| `manifestUrl` | `manifest-url` |             | `string` |
+| Property  | Attribute | Description | Type     |
+| --------- | --------- | ----------- | -------- |
+| `baseurl` | `baseurl` |             | `string` |
 
 
 ----------------------------------------------
