@@ -13,9 +13,10 @@
   ],
   "scripts": {
     "prepublishOnly": "npm run build",
+    "postversion": "git push --tags && npm publish",
     "build": "stencil build --config stencil.build.ts",
     "prestart": "yarn install",
-    "start": "stencil build --config stencil.dev.ts --dev --watch --serve --docs-json docs/build/picto/components.json"
+    "start": "stencil build --config stencil.dev.ts --dev --watch --serve --docs-json docs/components.json"
   },
   "devDependencies": {
     "@stencil/core": "0.15.0",
