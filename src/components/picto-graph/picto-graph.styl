@@ -18,13 +18,19 @@ h4 > ion-icon
   pv 5
 
 menu
+  margin 0
   ph 1.5
   pv 2
   height 100vh
+  box-sizing border-box
+  font-family var(--picto-font-family)
+  color var(--picto-text-color)
   background var(--picto-pane-background)
   border-right 1px solid var(--picto-pane-border)
   min-width 280px
   overflow-y auto
+  h4
+    @extend $h4
   > ion-icon
     color var(--picto-accent-color)
     float left

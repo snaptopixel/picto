@@ -1,9 +1,14 @@
+/*
+
 *
   margin 0
   padding 0
   lh 1
   mb 1
   color var(--picto-text-color)
+  outline none
+  appearance none
+  border none
 
 *, *::before, *::after
   box-sizing border-box
@@ -51,41 +56,59 @@ hr
   mt -2px
   mb 2
 
-h1
+*/
+
+$h1
   fs 2.4
   lh 3
   mt -0.5
   mb 1.5
 
-h2
+$h2
   font-weight bold
   fs 2.0
   lh 3
   mt -0.5
   mb 1.5
 
-h3
+$h3
   font-weight bold
   fs 1.6
   lh 2
   mt -0.5
   mb 1.5
 
-h4
+$h4
   font-weight bold
   fs 1.2
   lh 2
   mt -0.5
   mb 1.5
 
-h5
+$h5
   font-weight bold
+  text-transform uppercase
   fs 1
-  lh 2
+  lh 1
   mt -0.5
   mb 1.5
 
-p
+$p
   mt -0.5
   mb 1.5
   lh 2
+
+reset()
+  margin 0
+  padding 0
+  lh 1
+  mb 1
+  color var(--picto-text-color)
+  font-family var(--picto-font-family)
+  font-size var(--picto-font-size)
+  outline none
+  appearance none
+  border none
+  box-sizing border-box
+  &:before, &:after
+    box-sizing border-box

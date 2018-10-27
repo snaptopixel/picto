@@ -47,7 +47,7 @@ export class Props {
   createInput (type: string, prop: IComponentProp) {
     return (
       <label>
-        <div>{prop.attr} <code>{prop.type}</code></div>
+        <div>{prop.attr} </div>
         <input type={type}
           value={this.componentProps[prop.name]}
           onInput={
@@ -78,14 +78,14 @@ export class Props {
           }
         ></input>
         {prop.attr}
-        <code>{prop.type}</code>
+
       </label>
     )
   }
 
   createJSON (prop: IComponentProp) {
     return <label>
-      <div>{prop.attr} <code>{prop.type}</code></div>
+      <div>{prop.attr} </div>
       <textarea
         value={this.rawProps[prop.name]}
         onInput={

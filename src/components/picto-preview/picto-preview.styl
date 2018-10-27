@@ -20,20 +20,24 @@ section
     all initial
 
 .switcher
+  reset()
   position absolute
   top 0
   right vr(-5)
   ma 1
   background white
   button
+    reset()
     pa 0.5
     ma 0
     font-family inherit
     font-size inherit
+    color inherit
     border 1px solid rgba(128, 128, 128, 0.5)
     background var(--picto-pane-background)
     &:not(:first-child)
       border-left none
     &.selected
+      font-weight bold
       background var(--picto-accent-color)
       color var(--picto-accent-color-alt)

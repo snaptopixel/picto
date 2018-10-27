@@ -1,5 +1,18 @@
+input, textarea
+  reset()
+  display block
+  pa 1
+
+input[type="checkbox"],
+input[type="radio"]
+  reset()
+  display inline-block
+  mr 0.5
+  margin-bottom 0
+
 :host
   component(block)
+  reset()
   height 100%
   background var(--picto-pane-background)
   border-left 1px solid var(--picto-pane-border)
@@ -8,20 +21,12 @@
     pa 2
 
   label
-    line-height vr(2)
+    @extend $h4
     display block
     font-weight bold
     fs 1.2
-    code
-      font-family 'Courier New', Courier, monospace
-      font-weight normal
-      display inline-block
-      fs 0.8
-      vertical-align middle
-      margin 0
-      ph 0.2
-      background alpha(black, 0.1)
-      border-radius 3px
+    div
+      mb 0.5
 
   input[type="text"], textarea
     fs 0.8

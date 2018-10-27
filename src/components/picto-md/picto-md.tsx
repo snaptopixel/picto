@@ -15,7 +15,7 @@ export class Markdown {
   @Element() el: HTMLElement
   render () {
     return [
-      <div innerHTML={mts.Marked.parse(this.source)}/>
+      <div class='markdown' innerHTML={mts.Marked.parse(this.source)}/>
     ]
   }
 }
