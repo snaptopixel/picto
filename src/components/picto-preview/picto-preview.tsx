@@ -42,7 +42,7 @@ export class Preview {
         <button class={{ selected: this.bgMode === 'dark' }} onClick={() => this.bgMode = 'dark'}>dark</button>
       </div>,
       <section class={{ dark: this.bgMode === 'dark' }} style={{ background: this.bgMode === 'custom' ? this.usage.background : '' }}>
-        {preview}
+        <div class='preview'>{preview}</div>
       </section>
     ]
   }
