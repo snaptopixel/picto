@@ -29,11 +29,12 @@ export class Props {
 
   @Watch('componentProps')
   onPropsChanged () {
-    this.propsChanged.emit({ ...this.componentProps });
+    this.propsChanged.emit({ ...this.componentProps })
   }
 
   componentDidLoad () {
     this.setProps(this.usage)
+    this.onPropsChanged()
   }
 
   private rawProps: {[prop: string]: any} = {}
