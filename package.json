@@ -2,7 +2,7 @@
   "license": "MIT",
   "name": "@snaptopixel/picto",
   "author": "Casey Corcoran <https://github.com/snaptopixel>",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Preview, develop and document StencilJS components",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
