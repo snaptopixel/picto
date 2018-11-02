@@ -18,11 +18,12 @@ I like to majke thingnkask
 
 ## Properties
 
-| Property         | Attribute | Description | Type  |
-| ---------------- | --------- | ----------- | ----- |
-| `componentProps` | --        |             | `any` |
-| `component`      | --        |             | `any` |
-| `usage`          | --        |             | `any` |
+| Property         | Attribute   | Description                                                                       | Type                      |
+| ---------------- | ----------- | --------------------------------------------------------------------------------- | ------------------------- |
+| `componentProps` | --          |                                                                                   | `any`                     |
+| `component`      | --          | Here's a multiline description with **markdown** in it It's p cool my guy - 1 - 2 | `any`                     |
+| `someProp`       | `some-prop` |                                                                                   | `"bar" \| "baz" \| "foo"` |
+| `usage`          | --          |                                                                                   | `any`                     |
 
 
 ## Events

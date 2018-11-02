@@ -1,6 +1,6 @@
 import { Component, Prop, State, Watch, Event } from '@stencil/core'
 import { IComponent, IUsage, IComponentProps } from '@/model'
-import { EventEmitter } from '@stencil/state-tunnel/dist/types/stencil.core';
+import { EventEmitter } from '@stencil/state-tunnel/dist/types/stencil.core'
 
 @Component({
   tag: 'picto-preview',

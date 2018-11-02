@@ -114,9 +114,9 @@ export class Props {
       return null
     }
     const controls = this.component.props.map(p => {
-      let type: string
-      if (this.usage.controls) {
-        type = this.usage.controls[p.name] || p.type
+      let type = p.type
+      if (this.usage.controls && this.usage.controls[p.name]) {
+        type = this.usage.controls[p.name]
       }
       if (type && this.controlFactories[type]) {
         return this.controlFactories[type](p)
