@@ -23,6 +23,10 @@ export class Pictograph {
     this.currentProps = props
   }
 
+  onComponentRendered (detail: any): void {
+    // TODO: Pass default prop values
+  }
+
   render () {
     return [
       <stencil-router>
@@ -38,13 +42,23 @@ export class Pictograph {
               this.components.map(c =>
                 <stencil-route url={this.baseurl + c.tag} routeRender={() => {
                   const index = <stencil-route url={this.baseurl + c.tag} exact={true} routeRender={() => [
-                    <picto-preview component={c} usage={c.usage.index.attributes} componentProps={this.currentProps}></picto-preview>,
+                    <picto-preview
+                      component={c}
+                      usage={c.usage.index.attributes}
+                      componentProps={this.currentProps}
+                      onRendered={e => this.onComponentRendered(e.detail)}
+                    ></picto-preview>,
                     <picto-md source={c.usage.index.body}/>
                   ]}/>
                   const usageKeys = Object.keys(c.usage).filter(n => n !== 'index')
                   const usages = usageKeys.map(n =>
                     <stencil-route url={this.baseurl + c.tag + '/' + kebabCase(n)} routeRender={() => [
-                      <picto-preview component={c} usage={c.usage[n].attributes} componentProps={this.currentProps}></picto-preview>,
+                      <picto-preview
+                        component={c}
+                        usage={c.usage[n].attributes}
+                        componentProps={this.currentProps}
+                        onRendered={e => this.onComponentRendered(e.detail)}
+                      ></picto-preview>,
                       <picto-md source={c.usage[n].body}/>
                     ]}/>
                   )

@@ -1,5 +1,6 @@
-import { Component, Prop, State, Watch } from '@stencil/core'
+import { Component, Prop, State, Watch, Event } from '@stencil/core'
 import { IComponent, IUsage, IComponentProps } from '@/model'
+import { EventEmitter } from '@stencil/state-tunnel/dist/types/stencil.core';
 
 @Component({
   tag: 'picto-preview',
@@ -13,8 +14,10 @@ export class Preview {
 
   @State() bgMode: 'light' | 'dark' | 'custom'
 
+  @Event() rendered: EventEmitter
+
   @Watch('usage')
-  onUsageChanged () {
+  setBgMode () {
     if (!this.usage) return
     switch (this.usage.background) {
       case 'light':
@@ -30,12 +33,14 @@ export class Preview {
   }
 
   componentDidLoad () {
-    this.onUsageChanged()
+    this.setBgMode()
   }
 
   render () {
-    if (!this.component) return
-    const preview = <this.component.tag {...this.componentProps} innerHTML={this.usage.innerHTML}></this.component.tag>
+    if (!this.component || !this.component.tag) {
+      return null
+    }
+    const preview = <this.component.tag ref={(el: HTMLElement) => this.rendered.emit(el)} {...this.componentProps} style={this.usage.styles} innerHTML={this.usage.innerHTML}></this.component.tag>
     return [
       <div class={{ switcher: true, disabled: this.bgMode !== 'custom' }}>
         <button class={{ selected: this.bgMode === 'light' }} onClick={() => this.bgMode = 'light'}>light</button>

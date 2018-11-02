@@ -25,6 +25,13 @@ I like to majke thingnkask
 | `usage`          | --        |             | `any` |
 
 
+## Events
+
+| Event      | Detail | Description |
+| ---------- | ------ | ----------- |
+| `rendered` |        |             |
+
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*

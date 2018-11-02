@@ -1,5 +1,8 @@
 ---
 title: Rendering Markdown
+styles:
+  font-family: "'Comic Sans MS', Arial, Helvetica"
+  color: blue
 controls:
   source: textarea
 props:

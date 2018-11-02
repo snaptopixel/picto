@@ -33,6 +33,7 @@ export class Props {
   }
 
   componentDidLoad () {
+    if (!this.usage || !this.component) return
     this.setProps(this.usage)
     this.onPropsChanged()
   }
@@ -109,10 +110,16 @@ export class Props {
   }
 
   render () {
+    if (!this.component) {
+      return null
+    }
     const controls = this.component.props.map(p => {
-      const t = this.usage.controls ? this.usage.controls[p.name] : p.type
-      if (t && this.controlFactories[t]) {
-        return this.controlFactories[t](p)
+      let type: string
+      if (this.usage.controls) {
+        type = this.usage.controls[p.name] || p.type
+      }
+      if (type && this.controlFactories[type]) {
+        return this.controlFactories[type](p)
       } else {
         return this.createJSON(p)
       }

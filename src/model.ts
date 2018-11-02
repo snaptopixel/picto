@@ -5,14 +5,27 @@ export interface IComponentProp {
   docs: string
 }
 
+export interface IComponentEvent {
+  event: string
+  bubbles: boolean
+  cancelable: boolean
+  composed: boolean
+  docs: string
+  detail: string
+}
+
+export interface IComponentMethod {
+
+}
+
 export interface IComponent {
   tag: string
   styles: any[]
   props: IComponentProp[]
   readme: IParsedMarkdown
   usage: {[filename: string]: IParsedMarkdown}
-  methods: any[]
-  events: any[]
+  methods: IComponentMethod[]
+  events: IComponentEvent[]
 }
 
 export interface IGuide {
@@ -38,6 +51,7 @@ export interface IUsage {
   controls?: {[prop: string]: string}
   props?: {[prop: string]: any}
   background?: string
+  styles: {[prop: string]: string}
   innerHTML?: string
 }
 
