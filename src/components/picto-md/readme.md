@@ -20,6 +20,13 @@ props:
 # Rendering Markdown
 Markdown is rendered in various places via the `picto-md` component. You can see an example below
 
+```md
+# Hi I'm Markdown
+What's up my guy
+- Yo
+- Bro
+```
+
 <!-- Auto Generated Below -->
 
 

@@ -21,7 +21,7 @@ const addReadmeProps = (c: IComponent) => {
       ### Props
       | Property | Attribute | Description | Type |
       | -------- | --------- | ----------- | ---- |
-      ${c.props.map(p => `| ${p.name || '-'} | ${p.attr || '-'} | ${p.docs || '-'} | ${p.type || '-'} |`).join('\n')}
+      ${c.props.map(p => `| \`${p.name || '-'}\` | \`${p.attr || '-'}\` | \`${p.docs || '-'}\` | \`${p.type || '-'}\` |`).join('\n')}
     `.replace(/^\s*/gm, '')
   }
 }
@@ -32,7 +32,7 @@ const addReadmeEvents = (c: IComponent) => {
       ### Events
       | Event | Detail | Description |
       | ----- | ------ | ----------- |
-      ${c.events.map(e => `| ${e.event || '-'} | ${e.detail || '-'} | ${e.docs || '-'} |`).join('\n')}
+      ${c.events.map(e => `| \`${e.event || '-'}\` | \`${e.detail || '-'}\` | \`${e.docs || '-'}\` |`).join('\n')}
     `.replace(/^\s*/gm, '')
   }
 }
