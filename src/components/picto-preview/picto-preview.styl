@@ -1,21 +1,21 @@
 :host
   component(block)
 
-section
-  display flex
-  justify-content center
-  background var(--picto-bg-light)
-  mh -6
-  ph 6
-  pv 4
-  mb 0
-  box-shadow 0 -1px 0 alpha(black, 0.1) inset, 0 -3px 0 alpha(black, 0.05) inset
-  &.dark
-    background var(--picto-bg-dark)
-  :first-child
+  > section
+    display flex
+    justify-content center
+    background var(--picto-bg-light)
+    mh -6
+    ph 6
+    pv 4
     mb 0
-  .preview
-    width 100%
+    box-shadow 0 -1px 0 alpha(black, 0.1) inset, 0 -3px 0 alpha(black, 0.05) inset
+    &.dark
+      background var(--picto-bg-dark)
+    :first-child
+      mb 0
+    .preview
+      width 100%
 
 .switcher
   reset()
